@@ -18,11 +18,11 @@
     ],
     "rules": {
         "no-console": "off",
-        "indent": ["error", 4, { "MemberExpression": 0, "SwitchCase": 1 }],
+        "indent": ["error", 2, { "MemberExpression": 0, "SwitchCase": 1 }],
         "quotes": ["error", "single", { "allowTemplateLiterals": true }],
         "array-element-newline": ["error", "consistent"],
         "comma-dangle": ["error", "always-multiline"],
-        "semi": ["error", "always"],
+        "semi": ["error", "never"],
         "object-curly-spacing": ["error", "always"],
         "max-len": ["error", 140],
         "no-new": "off",
