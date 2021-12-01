@@ -15,12 +15,13 @@ eslint扩展自airbnb: [airbnb规范文档](https://github.com/lin-123/javascrip
 [github地址](https://github.com/TuSimple/naive-ui/blob/main/README.zh-CN.md)
 [使用文档](https://www.naiveui.com/zh-CN/os-theme)
 # 项目目录
--- script: 脚本文件
--- src
-    -- assets: 静态资源
-    -- components: 自定义组件
-    -- plugins: 插件
-        -- naive: 按需导入naive组件，有利于treeshake
-    -- views: 界面
-    -- App.vue: 组件入口
-    -- main: 项目入口
++ script: 脚本文件
++ src
+  + assets: 静态资源
+  + components: 自定义组件
+  + plugins: 插件
+    + naive: 按需导入naive组件，有利于treeshake
+  + views: 界面
+  + router：路由文件
+  + App.vue: 组件入口
+  + main: 项目入口
