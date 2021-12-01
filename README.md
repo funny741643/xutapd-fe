@@ -1,13 +1,14 @@
 # xutapd-fe
 为高效打通师生线上一体化作业解决方案。
 # 代码规范
-扩展自airbnb: [airbnb规范文档](https://github.com/lin-123/javascript)
+使用eslint进行代码检测，使用prettier进行格式化文件
+eslint扩展自airbnb: [airbnb规范文档](https://github.com/lin-123/javascript)
 * 默认可以使用console，发布代码时会关闭
-* 4个字符缩进
+* 2个字符缩进
 * 默认使用单引号
 * 数组元素之间需要一致地使用的换行符
 * 当最后一个元素或属性与闭括号 ] 或 } 在 不同的行时，要求使用拖尾逗号；当在 同一行时，禁止使用拖尾逗号。
-* 行尾必须加上分号
+* 行尾不加分号
 * 要求花括号内有空格
 # 组件库
 使用naive-ui

@@ -1,12 +1,7 @@
-import {
-    create,
-    NButton,
-} from 'naive-ui';
+import { create, NButton } from 'naive-ui'
 
 const naive: any = create({
-    components: [
-        NButton,
-    ],
-});
+  components: [NButton],
+})
 
-export default naive;
+export default naive
