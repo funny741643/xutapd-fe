@@ -1,6 +1,9 @@
 {
   "name": "xutapd-fe",
   "version": "0.0.0",
+  "author": {
+    "name": "funny"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -8,10 +11,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
-      "commit-msg": "FORCE_COLOR=1 node script/verify-commit.js",
-      "pre-push": "npm test"
+      "pre-commit": "lint-staged",
+      "commit-msg": "FORCE_COLOR=1 node script/verify-commit.js"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue,ts}": "eslint"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -23,6 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vitejs/plugin-vue": "^1.9.2",
+    "chalk": "^5.0.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-standard": "^16.0.3",
@@ -31,7 +37,10 @@
     "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-vue": "^8.1.1",
     "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "naive-ui": "^2.21.2",
     "typescript": "^4.4.3",
+    "vfonts": "^0.1.0",
     "vite": "^2.6.0",
     "vue-tsc": "^0.3.0"
   }
